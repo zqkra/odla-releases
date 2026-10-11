@@ -85,13 +85,15 @@ Odla adds the same layer to every harness, so Claude Code, Codex and Pi all work
 
 1. Download [`Odla-0.1.0-arm64.dmg`](https://github.com/zqkra/odla-releases/releases/latest/download/Odla-0.1.0-arm64.dmg).
 2. Open it and drag Odla into the Applications folder.
-3. This build is not signed with an Apple Developer ID yet, so macOS blocks the first launch and may say the app is damaged. Run this once in Terminal:
+3. Open Odla. Because this build is not notarized by Apple yet, macOS stops the first launch and says it could not verify the app. Allow it once, either way:
+   - Open **System Settings > Privacy & Security**, scroll to **Security** and click **Open Anyway** next to Odla, or
+   - run this in Terminal:
 
-   ```sh
-   xattr -dr com.apple.quarantine /Applications/Odla.app
-   ```
+     ```sh
+     xattr -dr com.apple.quarantine /Applications/Odla.app
+     ```
 
-4. Open Odla and sign in to an agent.
+4. Sign in to an agent and start a chat.
 
 To check that the download is intact, compare its checksum with `SHA256SUMS.txt` from the same release:
 
@@ -110,7 +112,7 @@ shasum -a 256 ~/Downloads/Odla-0.1.0-arm64.dmg
 
 ## Update
 
-Odla does not update itself yet. Download the newest release, quit Odla and replace the app in the Applications folder. Your chats and settings stay in `~/.odla`.
+Odla checks for new versions on its own. When one is out, a card appears at the bottom of the sidebar; click it to download the new installer, then quit Odla and replace the app in the Applications folder. You can also check in **Settings > General > Version**. Your chats and settings stay in `~/.odla`.
 
 ## Uninstall
 
