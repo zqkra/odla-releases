@@ -8,8 +8,8 @@
 <h3 align="center">The agentic development environment, built to be the best in the world.</h3>
 
 <p align="center">
-  Run Claude Code, Codex and Pi side by side, let them open subagents, and watch every change land.<br>
-  Fast, light and focused, with the files, terminal and browser in the same window.
+  Claude Code, Codex and Pi, made better. Shared memory, subagents that talk to each other,<br>
+  and the files, terminal and browser in one fast, focused window.
 </p>
 
 <p align="center">
@@ -23,7 +23,7 @@
   &nbsp;·&nbsp;
   <a href="#install">Install</a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/zqkra/odla-releases/issues/new">Report a bug</a>
+  <a href="https://github.com/zqkra/odla-releases/issues/new/choose">Report a bug</a>
 </p>
 
 <br>
@@ -34,38 +34,52 @@
 
 ## Why Odla
 
-Most tools for coding agents are either a terminal you have to babysit or a heavy editor with an agent bolted on. Odla is built around the agents themselves: every decision in it serves one goal, getting good work out of many agents with the least effort and the least noise.
+A coding agent is only as good as what surrounds it: what it remembers, what it knows about your project, how it hands work to other agents and how you see what it did. Odla is built around that. It takes the agents you already use and gives every one of them the same memory, the same skills and the same rules, then puts everything they touch in one window.
 
-- **Fast.** Odla opens in under a second on Apple silicon, and heavy viewers such as PDF and charts load only when you open them.
-- **Focused.** One primary action per screen, no automation clutter, and quiet states that tell you only what changed.
-- **Honest.** You always see what an agent is doing, how full its context is, and what it changed before you merge.
+- **Fast.** Opens in under a second on Apple silicon. Heavy viewers such as PDF and charts load only when you open them.
+- **Focused.** One primary action per screen, no automation clutter, and quiet states that only tell you what changed.
+- **Honest.** You always see what an agent is doing, how full its context is and what it changed before you merge.
 - **Native.** Liquid glass, smooth motion and keyboard shortcuts that feel at home on a Mac.
 
-## Features
+## Memory, built in
 
-### Agents
+Your agents share one long-term memory, and you own it. It is a private Git repository of Markdown notes that syncs across your machines, not a cloud service and not a plugin.
 
-- **Every major agent.** Claude Code, Codex, Pi and agents that speak the Agent Client Protocol, each with its own models and effort levels.
-- **Subagents first.** A parent agent opens children, and they report back. The orchestration map shows who opened whom and what each one is doing right now.
-- **Steer at any time.** Send a message while an agent works and it reaches the running turn. Queue the next one or stop with a click.
-- **Autonomy levels.** Ask, Edit, Build or Full, chosen per chat.
+- **Every agent remembers.** Each chat gets the memory skill, whatever the harness. Agents search and read notes when they need them and save decisions, shipped work and lessons when they happen.
+- **No wasted context.** Nothing is loaded at the start of a chat. An agent opens memory only when the task calls for it.
+- **Ask your memory.** Ask a question and get an answer that cites the notes it came from, each one a click away.
+- **See what you know.** A constellation of your notes and how they link, plus what was learned this week.
+- **It keeps itself tidy.** An organizer agent cleans up and links your notes every week, or whenever you ask.
 
-### Workspace
+## Every agent, made better
 
-- **Files.** Type icons, syntax colours in the Odla palette, wrapped lines, and previews for images, SVG, PDF, video, audio and Markdown.
-- **Terminal.** The chat's own shell, in the project folder, next to the conversation.
-- **Browser.** A built-in browser that agents can drive for real QA, with a floating view while they work.
+Odla adds the same layer to every harness, so Claude Code, Codex and Pi all work the Odla way.
+
+- **Plans and tickets without asking.** Before multi-step work, agents write a plan, split it into tickets and move each ticket as the work moves. Decisions become specs, reviews and notes you can read later.
+- **Answers you can read at a glance.** Agents pick the right form for each idea: a table, a real chart, a diagram or one plain sentence. Every image an agent opens shows up in the chat.
+- **Shared skills.** Memory, orchestration, browser control, charts and tickets reach every agent, whatever the harness.
+- **A real browser.** Agents open, read, click and type in Odla's own browser to check their work, and you watch it happen in a floating view.
+- **Never stuck on limits.** When a subscription window runs out, Odla queues the turn and sends it again when the window reopens. Overloaded providers are retried with backoff, and a pending retry survives a restart.
+- **One set of permissions.** Choose Ask, Edit, Build or Full, and Odla maps it to each harness's own permission model.
+
+## Many agents, one window
+
+- **Subagents first.** A parent agent opens children and briefs them. Children report back to their parent, and siblings can talk to each other when you allow it.
+- **See the orchestration.** The map shows who opened whom and what each agent is doing right now.
+- **Steer at any time.** A message sent while an agent works reaches the running turn. Queue the next one or stop with a click.
+- **Switch agents mid-conversation.** Pick a model from another harness and the work continues in a new chat with the full conversation as context.
+- **Native commands.** Each harness's slash commands work right in the composer.
+
+## Everything in one place
+
+- **Files.** Type icons, syntax colours, wrapped lines, and previews for images, SVG, PDF, video, audio and Markdown.
+- **Terminal.** The chat's own shell, in the project folder.
 - **Review.** Every change an agent makes, as a diff, before it lands.
-
-### Insight
-
-- **Context meter.** See how full each agent's context window is, what fills it, and where auto-compaction starts.
+- **Context meter.** How full each agent's context window is, what fills it and where auto-compaction starts.
 
   <img alt="The context panel with a cell grid, a legend of categories and the auto-compaction point" src="assets/screenshot-context.png" width="100%">
 
 - **Usage.** Your agent subscriptions and their limits at a glance.
-- **Charts and diagrams.** Agents answer with real charts and diagrams right in the chat.
-- **Artifacts and memory.** Tickets, plans and notes that agents read, and a memory they share.
 
 ## Install
 
@@ -92,6 +106,7 @@ shasum -a 256 ~/Downloads/Odla-0.1.0-arm64.dmg
 | Mac | Apple silicon (M1 or later). Intel Macs are not supported. |
 | macOS | 13 Ventura or later |
 | Agent | An account with at least one supported agent, for example Claude Code or Codex |
+| Memory | Optional: a Git repository of Markdown notes with an `AGENTS.md`, chosen in Settings > Memory > Vault folder. Search uses [ripgrep](https://github.com/BurntSushi/ripgrep) (`brew install ripgrep`). |
 
 ## Update
 
@@ -99,11 +114,11 @@ Odla does not update itself yet. Download the newest release, quit Odla and repl
 
 ## Uninstall
 
-Quit Odla and move it to the Trash. To delete your chats and settings as well, remove `~/.odla` and `~/Library/Application Support/Odla`.
+Quit Odla and move it to the Trash. To delete your chats and settings as well, remove `~/.odla` and `~/Library/Application Support/Odla`. Your memory repository is yours and stays where it is.
 
 ## Feedback
 
-Odla is in early testing, and every report helps. [Open an issue](https://github.com/zqkra/odla-releases/issues/new) with your macOS version, the Odla version (Odla > About Odla) and the steps that lead to the problem.
+Odla is in early testing, and every report helps. [Open an issue](https://github.com/zqkra/odla-releases/issues/new/choose) with your macOS version, the Odla version (Odla > About Odla) and the steps that lead to the problem.
 
 ## License
 
