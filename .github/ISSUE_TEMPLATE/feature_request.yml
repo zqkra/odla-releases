@@ -1,0 +1,18 @@
+name: Feature request
+description: Something you wish Odla did, or did better.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: workflow
+    attributes:
+      label: What you were trying to do
+      description: The task, step by step, and where Odla got in the way.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What you would like
+      description: The behavior you want. A sketch or a screenshot of another tool helps.
+    validations:
+      required: true

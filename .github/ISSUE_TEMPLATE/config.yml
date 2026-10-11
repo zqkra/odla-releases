@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Download the latest release
+    url: https://github.com/zqkra/odla-releases/releases/latest
+    about: Make sure you are on the newest version before you report a bug.
