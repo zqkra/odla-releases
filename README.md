@@ -19,7 +19,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/zqkra/odla-releases/releases/latest/download/Odla-0.1.0-arm64.dmg"><strong>Download Odla 0.1.0 for Mac</strong></a>
+  <a href="https://github.com/zqkra/odla-releases/releases/latest"><strong>Download Odla for Mac</strong></a>
   &nbsp;·&nbsp;
   <a href="#install">Install</a>
   &nbsp;·&nbsp;
@@ -83,7 +83,7 @@ Odla adds the same layer to every harness, so Claude Code, Codex and Pi all work
 
 ## Install
 
-1. Download [`Odla-0.1.0-arm64.dmg`](https://github.com/zqkra/odla-releases/releases/latest/download/Odla-0.1.0-arm64.dmg).
+1. Download `Odla-<version>-arm64.dmg` from the [latest release](https://github.com/zqkra/odla-releases/releases/latest).
 2. Open it and drag Odla into the Applications folder.
 3. Open Odla. Because this build is not notarized by Apple yet, macOS stops the first launch and says it could not verify the app. Allow it once, either way:
    - Open **System Settings > Privacy & Security**, scroll to **Security** and click **Open Anyway** next to Odla, or
@@ -98,7 +98,7 @@ Odla adds the same layer to every harness, so Claude Code, Codex and Pi all work
 To check that the download is intact, compare its checksum with `SHA256SUMS.txt` from the same release:
 
 ```sh
-shasum -a 256 ~/Downloads/Odla-0.1.0-arm64.dmg
+shasum -a 256 ~/Downloads/Odla-*-arm64.dmg
 ```
 
 ## Requirements
