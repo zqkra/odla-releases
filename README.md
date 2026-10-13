@@ -36,15 +36,16 @@
 
 A coding agent is only as good as what surrounds it: what it remembers, what it knows about your project, how it hands work to other agents and how you see what it did. Odla is built around that. It takes the agents you already use and gives every one of them the same memory, the same skills and the same rules, then puts everything they touch in one window.
 
-- **Fast.** Opens in under a second on Apple silicon. Heavy viewers such as PDF and charts load only when you open them.
+- **Fast.** Opens in under a second on Apple silicon. Long chats load their history as you scroll, and the app stays light while your agents work. Heavy viewers such as PDF and charts load only when you open them.
 - **Focused.** One primary action per screen, no automation clutter, and quiet states that only tell you what changed.
-- **Honest.** You always see what an agent is doing, how full its context is and what it changed before you merge.
-- **Native.** Liquid glass, smooth motion and keyboard shortcuts that feel at home on a Mac.
+- **Honest.** You always see what an agent is doing, what is left on its task list, how full its context is and what it changed before you merge.
+- **Native.** Liquid glass that follows the System theme, a sidebar that floats out from the edge, smooth motion and keyboard shortcuts that feel at home on a Mac.
 
 ## Memory, built in
 
 Your agents share one long-term memory, and you own it. It is a private Git repository of Markdown notes that syncs across your machines, not a cloud service and not a plugin.
 
+- **It sets itself up.** On first launch Odla creates your memory, and with a one-time code it backs every note up to a private GitHub repository.
 - **Every agent remembers.** Each chat gets the memory skill, whatever the harness. Agents search and read notes when they need them and save decisions, shipped work and lessons when they happen.
 - **No wasted context.** Nothing is loaded at the start of a chat. An agent opens memory only when the task calls for it.
 - **Ask your memory.** Ask a question and get an answer that cites the notes it came from, each one a click away.
@@ -60,6 +61,7 @@ Odla adds the same layer to every harness, so Claude Code, Codex and Pi all work
 - **Shared skills.** Memory, orchestration, browser control, charts and tickets reach every agent, whatever the harness.
 - **A real browser.** Agents open, read, click and type in Odla's own browser to check their work, and you watch it happen in a floating view.
 - **Never stuck on limits.** When a subscription window runs out, Odla queues the turn and sends it again when the window reopens. Overloaded providers are retried with backoff, and a pending retry survives a restart.
+- **Task lists you can see.** Agents keep a task list with phases. The task in progress shows above the composer, the full list opens with one click, and Odla reminds an agent that stops with open tasks.
 - **One set of permissions.** Choose Ask, Edit, Build or Full, and Odla maps it to each harness's own permission model.
 
 ## Many agents, one window
@@ -80,6 +82,8 @@ Odla adds the same layer to every harness, so Claude Code, Codex and Pi all work
   <img alt="The context panel with a cell grid, a legend of categories and the auto-compaction point" src="assets/screenshot-context.png" width="100%">
 
 - **Usage.** Your agent subscriptions and their limits at a glance.
+- **Composer.** Word suggestions learned from your own prompts, Tab to accept, and the model, effort and autonomy for each chat.
+- **Computer use (experimental).** Turn it on in Settings > General > Experimental and agents can drive a Mac app in the background, without taking your pointer or bringing the app to the front.
 
 ## Install
 
@@ -93,7 +97,7 @@ Odla adds the same layer to every harness, so Claude Code, Codex and Pi all work
      xattr -dr com.apple.quarantine /Applications/Odla.app
      ```
 
-4. Sign in to an agent and start a chat.
+4. Odla walks you through the first launch: connect your agents, add your projects and set up your memory. Then start a chat.
 
 To check that the download is intact, compare its checksum with `SHA256SUMS.txt` from the same release:
 
@@ -108,7 +112,7 @@ shasum -a 256 ~/Downloads/Odla-*-arm64.dmg
 | Mac | Apple silicon (M1 or later). Intel Macs are not supported. |
 | macOS | 13 Ventura or later |
 | Agent | An account with at least one supported agent, for example Claude Code or Codex |
-| Memory | Optional: a Git repository of Markdown notes with an `AGENTS.md`, chosen in Settings > Memory > Vault folder. Search uses [ripgrep](https://github.com/BurntSushi/ripgrep) (`brew install ripgrep`). |
+| Memory | Nothing to install: Odla creates it on first launch. It needs Git, which comes with Apple's developer tools; Odla offers to install them if they are missing. Backup to GitHub is optional. |
 
 ## Update
 
