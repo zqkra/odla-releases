@@ -36,7 +36,7 @@
 
 A coding agent is only as good as what surrounds it: what it remembers, what it knows about your project, how it hands work to other agents and how you see what it did. Odla is built around that. It takes the agents you already use and gives every one of them the same memory, the same skills and the same rules, then puts everything they touch in one window.
 
-- **Fast.** Opens in under a second on Apple silicon. Long chats load their history as you scroll, and the app stays light while your agents work. Heavy viewers such as PDF and charts load only when you open them.
+- **Fast.** Opens in under a second on Apple silicon, and the first chat in a Git project gets its workspace ready while you are still writing the prompt. Long chats load their history as you scroll, and the app stays light while your agents work, even more when you are in another app. Heavy viewers such as PDF and charts load only when you open them.
 - **Focused.** One primary action per screen, no automation clutter, and quiet states that only tell you what changed.
 - **Honest.** You always see what an agent is doing, what is left on its task list, how full its context is and what it changed before you merge.
 - **Native.** Liquid glass that follows the System theme, a sidebar that floats out from the edge, smooth motion and keyboard shortcuts that feel at home on a Mac.
@@ -82,7 +82,7 @@ Odla adds the same layer to every harness, so Claude Code, Codex and Pi all work
   <img alt="The context panel with a cell grid, a legend of categories and the auto-compaction point" src="assets/screenshot-context.png" width="100%">
 
 - **Usage.** Your agent subscriptions and their limits at a glance.
-- **Composer.** Word suggestions learned from your own prompts, Tab to accept, and the model, effort and autonomy for each chat.
+- **Composer.** Drop files anywhere in the window to attach them: images show as thumbnails and as chips in the prompt, and large files, HEIC photos and folders attach by path. Word suggestions are learned from your own prompts, Tab accepts them, and you pick the model, effort and autonomy for each chat.
 - **Computer use (experimental).** Turn it on in Settings > General > Experimental and agents can drive a Mac app in the background, without taking your pointer or bringing the app to the front.
 
 ## Install
