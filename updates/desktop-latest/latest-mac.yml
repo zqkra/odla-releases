@@ -1,12 +1,12 @@
-version: 0.3.2
+version: 0.3.3
 files:
-  - url: https://github.com/zqkra/odla-releases/releases/download/v0.3.2/Odla-0.3.2-arm64.zip
-    sha512: 9FSRqinpM9YWTGtonEaDk8F/9ekmKrdZ+/fxMLd2irMDhkmpmujMBJT156zR/oEQ3Y8jts+usfJH7txwJVIDKA==
-    size: 171417866
-  - url: https://github.com/zqkra/odla-releases/releases/download/v0.3.2/Odla-0.3.2-arm64.dmg
-    sha512: hcZOVWPw+PMLMLMDsimfUIkawMwno3mQ1x9l4rUoQHcl3ArQskPgjcsI4zEb4IGSlQ65hUlEEDMyjf3M3UYA5g==
-    size: 172348732
-path: https://github.com/zqkra/odla-releases/releases/download/v0.3.2/Odla-0.3.2-arm64.zip
-sha512: 9FSRqinpM9YWTGtonEaDk8F/9ekmKrdZ+/fxMLd2irMDhkmpmujMBJT156zR/oEQ3Y8jts+usfJH7txwJVIDKA==
-releaseDate: 2026-11-03T08:44:46.745Z
+  - url: https://github.com/zqkra/odla-releases/releases/download/v0.3.3/Odla-0.3.3-arm64.zip
+    sha512: gZzAHmUJ8yPsp80r5gkbp0zXT9Py7sYsecdN+H+HiEextYc8gucnjoxHnuyhz6TmKkzSbebKsZgH46rl4BXnMw==
+    size: 171421444
+  - url: https://github.com/zqkra/odla-releases/releases/download/v0.3.3/Odla-0.3.3-arm64.dmg
+    sha512: QGIXsobxduRbzdaIk//XGB7tSv59tBJvdtQQDfsjrzjW2nmQRnTXX9Bv2b6vR4uHvVtA99vjx5xu7oea/onXKg==
+    size: 172358310
+path: https://github.com/zqkra/odla-releases/releases/download/v0.3.3/Odla-0.3.3-arm64.zip
+sha512: gZzAHmUJ8yPsp80r5gkbp0zXT9Py7sYsecdN+H+HiEextYc8gucnjoxHnuyhz6TmKkzSbebKsZgH46rl4BXnMw==
+releaseDate: 2026-11-03T20:54:47.643Z
 minimumSystemVersion: 22.0.0

@@ -57,7 +57,7 @@ Your agents share one long-term memory, and you own it. It is a private Git repo
 Odla adds the same layer to every harness, so Claude Code, Codex and Pi all work the Odla way.
 
 - **Plans and tickets without asking.** Before multi-step work, agents write a plan, split it into tickets and move each ticket as the work moves. Decisions become specs, reviews and notes you can read later.
-- **Answers you can read at a glance.** Agents pick the right form for each idea: a table, a real chart, a diagram or one plain sentence. Every image an agent opens shows up in the chat.
+- **Answers you can read at a glance.** Agents pick the right form for each idea: a table, a real chart, a diagram or one plain sentence. Every image an agent opens shows up in the chat, and the videos, sound clips and images it makes play right in its reply.
 - **Shared skills.** Memory, orchestration, browser control, charts and tickets reach every agent, whatever the harness.
 - **A real browser.** Agents open, read, click and type in Odla's own browser to check their work, and you watch it happen in a floating view.
 - **Never stuck on limits.** When a subscription window runs out, Odla queues the turn and sends it again when the window reopens. Overloaded providers are retried with backoff, and a pending retry survives a restart.
@@ -78,6 +78,7 @@ Odla adds the same layer to every harness, so Claude Code, Codex and Pi all work
 - **Threads and pull requests.** A strip at the top of the sidebar opens Threads, Tasks, Pull requests, Artifacts and Memory (⌘1 to ⌘5). The Pull requests page shows every chat's pull request with its checks and review: Fix sends the failing checks to the agent, and Merge merges only at the commit Odla last saw.
 - **Tasks that repeat, and issues that become tasks.** A task can run on a schedule, each run in a new chat. The Issues view marks the GitHub issues that could be a task, with three exact quotes as proof, and creates tasks only when you let it.
 - **Search inside chats.** ⌘K also finds words said inside conversations, with the matching line.
+- **Chats that know each other.** Mention a chat from any project and the agent reads it before it answers.
 
 ## Everything in one place
 
@@ -89,7 +90,7 @@ Odla adds the same layer to every harness, so Claude Code, Codex and Pi all work
   <img alt="The context panel with a cell grid, a legend of categories and the auto-compaction point" src="assets/screenshot-context.png" width="100%">
 
 - **Usage.** Your agent subscriptions and their limits at a glance.
-- **Replies.** A reply comes out at a steady pace, each new word fading in, and stays clean: hover it to show copy, fork, the time, how long it took, the speed in tokens per second and what the turn cost.
+- **Replies.** A reply comes out word by word at the pace the agent writes, each word coming into focus from a soft blur while the chat glides up with it, and stays clean: hover it to show copy, fork, the time, how long it took, the speed in tokens per second and what the turn cost.
 - **Composer.** Drop files anywhere in the window to attach them: images show as thumbnails and as chips in the prompt, and large files, HEIC photos and folders attach by path. Word suggestions are learned from your own prompts, Tab accepts them, and you pick the model, effort and autonomy for each chat.
 - **Computer use (experimental).** Turn it on in Settings > General > Experimental and agents can drive a Mac app in the background, without taking your pointer or bringing the app to the front.
 
