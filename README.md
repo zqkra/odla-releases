@@ -89,7 +89,7 @@ Odla adds the same layer to every harness, so Claude Code, Codex and Pi all work
   <img alt="The context panel with a cell grid, a legend of categories and the auto-compaction point" src="assets/screenshot-context.png" width="100%">
 
 - **Usage.** Your agent subscriptions and their limits at a glance.
-- **Replies.** A reply comes out at a steady pace, each new word fading in, and ends in one quiet row with copy, fork, the time and how long it took. Hover it for the speed in tokens per second and what the turn cost.
+- **Replies.** A reply comes out at a steady pace, each new word fading in, and stays clean: hover it to show copy, fork, the time, how long it took, the speed in tokens per second and what the turn cost, in one quiet line.
 - **Composer.** Drop files anywhere in the window to attach them: images show as thumbnails and as chips in the prompt, and large files, HEIC photos and folders attach by path. Word suggestions are learned from your own prompts, Tab accepts them, and you pick the model, effort and autonomy for each chat.
 - **Computer use (experimental).** Turn it on in Settings > General > Experimental and agents can drive a Mac app in the background, without taking your pointer or bringing the app to the front.
 
