@@ -66,6 +66,7 @@ Odla adds the same layer to every harness, so Claude Code, Codex and Pi all work
 - **Goals Odla verifies.** Give a chat a goal and its checks. When the agent stops, Odla runs the checks and asks a judge whether the goal is met, and sends the agent back with the reason until it is. Long goals continue in fresh chats.
 - **Credentials, kept private.** An agent asks for a login or a key with a card above the composer. Values are encrypted on your Mac: agents use them in one command or type them into one website, and never read them back.
 - **Background jobs, programs and workflows.** Agents start long builds or servers and get a message when they end, run one short program that reads many files at once, or hand parts of the work to agents on other harnesses, and get back only the result.
+- **Several accounts.** Add a second Claude Code or Codex login from the model menu and sign in from your browser. Page dots show which account runs, each chat keeps its account, and Usage shows the limits of each one.
 - **Safer commands.** Before a command that can lose work, the approval card says what it would lose, and Odla saves your working tree first.
 
 ## Many agents, one window
