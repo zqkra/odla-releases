@@ -2,24 +2,24 @@
   "schemaVersion": 1,
   "channel": "latest",
   "platform": "macos",
-  "version": "0.2.1",
-  "releaseDate": "2026-10-16T08:57:59.634Z",
-  "releaseName": "Odla desktop 0.2.1",
+  "version": "0.3.0",
+  "releaseDate": "2026-11-03T07:43:22.630Z",
+  "releaseName": "Odla desktop 0.3.0",
   "releaseNotes": null,
   "minimumSystemVersion": "22.0.0",
   "files": [
     {
-      "url": "https://github.com/zqkra/odla-releases/releases/download/v0.2.1/Odla-0.2.1-arm64.zip",
-      "sha512": "jhi2Bly5/Mb3Ve0zdHDs4APcn2TSBJC4wkAIqfrfdZwuOIlfpo5VU3MLNH1BxF7BjAl0VOKm1QIa7Ms7fOxazQ==",
-      "size": 170728417
+      "url": "https://github.com/zqkra/odla-releases/releases/download/v0.3.0/Odla-0.3.0-arm64.zip",
+      "sha512": "QQbjoCbBXGp6/Y78+wx/Z5LsL6xvpUTnR20vn18jhFcyozoYmYcvdJHXGzYj46BKXnUSPnnsJxlXJctKjtYYfA==",
+      "size": 171417302
     },
     {
-      "url": "https://github.com/zqkra/odla-releases/releases/download/v0.2.1/Odla-0.2.1-arm64.dmg",
-      "sha512": "B/roRQd+tslEY+YWbgrAxX6Ce47SOG3F9df3SRJ1qWWLGcB8Yg8LVPfYpFH9os7eekuUMynMY6jfNxNwEEz+bg==",
-      "size": 170963292
+      "url": "https://github.com/zqkra/odla-releases/releases/download/v0.3.0/Odla-0.3.0-arm64.dmg",
+      "sha512": "cd2cQXQQm8YUiorJPj44ObpVX/dhTgRgPLnFaxbMm7ofPXkKA8dt+jfmSw38f3F/CpmnKFQvbXhO/LPpywkycQ==",
+      "size": 172337144
     }
   ],
-  "path": "https://github.com/zqkra/odla-releases/releases/download/v0.2.1/Odla-0.2.1-arm64.zip",
-  "sha512": "jhi2Bly5/Mb3Ve0zdHDs4APcn2TSBJC4wkAIqfrfdZwuOIlfpo5VU3MLNH1BxF7BjAl0VOKm1QIa7Ms7fOxazQ==",
+  "path": "https://github.com/zqkra/odla-releases/releases/download/v0.3.0/Odla-0.3.0-arm64.zip",
+  "sha512": "QQbjoCbBXGp6/Y78+wx/Z5LsL6xvpUTnR20vn18jhFcyozoYmYcvdJHXGzYj46BKXnUSPnnsJxlXJctKjtYYfA==",
   "stagingPercentage": null
 }

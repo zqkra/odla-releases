@@ -63,6 +63,10 @@ Odla adds the same layer to every harness, so Claude Code, Codex and Pi all work
 - **Never stuck on limits.** When a subscription window runs out, Odla queues the turn and sends it again when the window reopens. Overloaded providers are retried with backoff, and a pending retry survives a restart.
 - **Task lists you can see.** Agents keep a task list with phases. The task in progress shows above the composer, the full list opens with one click, and Odla reminds an agent that stops with open tasks.
 - **One set of permissions.** Choose Ask, Edit, Build or Full, and Odla maps it to each harness's own permission model.
+- **Goals Odla verifies.** Give a chat a goal and its checks. When the agent stops, Odla runs the checks and asks a judge whether the goal is met, and sends the agent back with the reason until it is. Long goals continue in fresh chats.
+- **Credentials, kept private.** An agent asks for a login or a key with a card above the composer. Values are encrypted on your Mac: agents use them in one command or type them into one website, and never read them back.
+- **Background jobs, programs and workflows.** Agents start long builds or servers and get a message when they end, run one short program that reads many files at once, or hand parts of the work to agents on other harnesses, and get back only the result.
+- **Safer commands.** Before a command that can lose work, the approval card says what it would lose, and Odla saves your working tree first.
 
 ## Many agents, one window
 
@@ -71,17 +75,21 @@ Odla adds the same layer to every harness, so Claude Code, Codex and Pi all work
 - **Steer at any time.** A message sent while an agent works reaches the running turn. Queue the next one or stop with a click.
 - **Switch agents mid-conversation.** Pick a model from another harness and the work continues in a new chat with the full conversation as context.
 - **Native commands.** Each harness's slash commands work right in the composer.
+- **Threads and pull requests.** A strip at the top of the sidebar opens Threads, Tasks, Pull requests, Artifacts and Memory (⌘1 to ⌘5). The Pull requests page shows every chat's pull request with its checks and review: Fix sends the failing checks to the agent, and Merge merges only at the commit Odla last saw.
+- **Tasks that repeat, and issues that become tasks.** A task can run on a schedule, each run in a new chat. The Issues view marks the GitHub issues that could be a task, with three exact quotes as proof, and creates tasks only when you let it.
+- **Search inside chats.** ⌘K also finds words said inside conversations, with the matching line.
 
 ## Everything in one place
 
 - **Files.** Type icons, syntax colours, wrapped lines, and previews for images, SVG, PDF, video, audio and Markdown.
 - **Terminal.** The chat's own shell, in the project folder.
 - **Review.** Every change an agent makes, as a diff, before it lands.
-- **Context meter.** How full each agent's context window is, what fills it and where auto-compaction starts.
+- **Context meter.** How full each agent's context window is, what fills it, where auto-compaction starts and how much of each turn came from the prompt cache.
 
   <img alt="The context panel with a cell grid, a legend of categories and the auto-compaction point" src="assets/screenshot-context.png" width="100%">
 
 - **Usage.** Your agent subscriptions and their limits at a glance.
+- **Replies.** A reply comes out at a steady pace, each new word fading in, and ends in one quiet row with copy, fork, the time and how long it took. Hover it for the speed in tokens per second and what the turn cost.
 - **Composer.** Drop files anywhere in the window to attach them: images show as thumbnails and as chips in the prompt, and large files, HEIC photos and folders attach by path. Word suggestions are learned from your own prompts, Tab accepts them, and you pick the model, effort and autonomy for each chat.
 - **Computer use (experimental).** Turn it on in Settings > General > Experimental and agents can drive a Mac app in the background, without taking your pointer or bringing the app to the front.
 
@@ -89,14 +97,7 @@ Odla adds the same layer to every harness, so Claude Code, Codex and Pi all work
 
 1. Download `Odla-<version>-arm64.dmg` from the [latest release](https://github.com/zqkra/odla-releases/releases/latest).
 2. Open it and drag Odla into the Applications folder.
-3. Open Odla. Because this build is not notarized by Apple yet, macOS stops the first launch and says it could not verify the app. Allow it once, either way:
-   - Open **System Settings > Privacy & Security**, scroll to **Security** and click **Open Anyway** next to Odla, or
-   - run this in Terminal:
-
-     ```sh
-     xattr -dr com.apple.quarantine /Applications/Odla.app
-     ```
-
+3. Open Odla. It is signed with a Developer ID and notarized by Apple, so it opens on the first try.
 4. Odla walks you through the first launch: connect your agents, add your projects and set up your memory. Then start a chat.
 
 To check that the download is intact, compare its checksum with `SHA256SUMS.txt` from the same release:
