@@ -92,6 +92,7 @@ Odla adds the same layer to every harness, so Claude Code, Codex and Pi all work
 
 - **Prompt history.** A quiet stack of marks beside the chat, one for each message you wrote. Hover to read it, click or press Cmd Option Up and Down to go there.
 - **Autocorrect that learns.** Swapped letters and missing accents fix themselves as you finish a word, in Spanish and English, from the words of your own chats. Backspace keeps what you wrote.
+- **Updates that install themselves.** Odla downloads new versions in the background and restarts when you say, after your running chats finish.
 - **Usage.** Your agent subscriptions and their limits at a glance.
 - **Replies.** A reply comes out word by word at the pace the agent writes, each word coming into focus from a soft blur while the chat glides up with it, and stays clean: hover it to show copy, fork, the time, how long it took, the speed in tokens per second and what the turn cost.
 - **Composer.** Drop files anywhere in the window to attach them: images show as thumbnails and as chips in the prompt, and large files, HEIC photos and folders attach by path. Word suggestions are learned from your own prompts, Tab accepts them, and you pick the model, effort and autonomy for each chat.
@@ -121,7 +122,9 @@ shasum -a 256 ~/Downloads/Odla-*-arm64.dmg
 
 ## Update
 
-Odla checks for new versions on its own. When one is out, a card appears at the bottom of the sidebar; click it to download the new installer, then quit Odla and replace the app in the Applications folder. You can also check in **Settings > General > Version**. Your chats and settings stay in `~/.odla`.
+Odla updates itself from version 0.3.8 on. It checks for new versions and downloads them in the background. When one is ready, a card at the bottom of the sidebar shows Restart to update. If chats are running, Odla waits until they finish. It closes and opens again by itself, which can take up to a minute. If you do not restart, the update installs when you quit. Your chats and settings stay.
+
+If Odla cannot install an update by itself, the card offers the manual download: quit Odla, replace the app in Applications with the new one, and open it again.
 
 ## Uninstall
 
