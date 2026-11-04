@@ -90,6 +90,8 @@ Odla adds the same layer to every harness, so Claude Code, Codex and Pi all work
 
   <img alt="The context panel with a cell grid, a legend of categories and the auto-compaction point" src="assets/screenshot-context.png" width="100%">
 
+- **Prompt history.** A quiet stack of marks beside the chat, one for each message you wrote. Hover to read it, click or press Cmd Option Up and Down to go there.
+- **Autocorrect that learns.** Swapped letters and missing accents fix themselves as you finish a word, in Spanish and English, from the words of your own chats. Backspace keeps what you wrote.
 - **Usage.** Your agent subscriptions and their limits at a glance.
 - **Replies.** A reply comes out word by word at the pace the agent writes, each word coming into focus from a soft blur while the chat glides up with it, and stays clean: hover it to show copy, fork, the time, how long it took, the speed in tokens per second and what the turn cost.
 - **Composer.** Drop files anywhere in the window to attach them: images show as thumbnails and as chips in the prompt, and large files, HEIC photos and folders attach by path. Word suggestions are learned from your own prompts, Tab accepts them, and you pick the model, effort and autonomy for each chat.
